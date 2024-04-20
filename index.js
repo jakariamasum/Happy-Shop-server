@@ -32,7 +32,7 @@ const client = new MongoClient(uri, {
 
 const store_id = process.env.SSLCOMMERZ_STORE_ID;
 const store_passwd = process.env.SSLCOMMERZ_STORE_PASS;
-const is_live = false //true for live, false for sandbox
+const is_live = true //true for live, false for sandbox
 
 
 
