@@ -14,7 +14,7 @@ app.use(express.json());
 // Routes
 // Define your routes here
 app.get('/', (req, res) => {
-  res.send("Cholo Bazar is running on Load Sheading hire")
+  res.send("Happy Shop is running on Load Sheading hire")
 })
 
 const uri = `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASS}@cluster0.yzkj8ly.mongodb.net/?retryWrites=true&w=majority`;
@@ -32,7 +32,7 @@ const client = new MongoClient(uri, {
 
 const store_id = process.env.SSLCOMMERZ_STORE_ID;
 const store_passwd = process.env.SSLCOMMERZ_STORE_PASS;
-const is_live = true //true for live, false for sandbox
+const is_live = false //true for live, false for sandbox
 
 
 
